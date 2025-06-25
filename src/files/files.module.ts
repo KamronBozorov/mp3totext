@@ -1,14 +1,16 @@
 import { Module } from '@nestjs/common';
 import { FilesService } from './files.service';
 import { FilesController } from './files.controller';
-import { BullModule } from '@nestjs/bullmq';
-import { TranscribeProcessor } from '../../FS/scripts/test_pyhton';
+import { BullModule } from '@nestjs/bull';
+import { DeepgramModule } from 'src/deepgram/deepgram.module';
+import { TranscribeProcessor } from 'src/queue/transcribe.process';
 
 @Module({
   imports: [
     BullModule.registerQueue({
       name: 'transcribe',
     }),
+    DeepgramModule,
   ],
   controllers: [FilesController],
   providers: [FilesService, TranscribeProcessor],

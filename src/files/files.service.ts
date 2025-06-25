@@ -21,23 +21,19 @@ export class FilesService {
 
       const fileName = uuidv4() + '.mp3';
 
-      const filePath = path.join(
-        __dirname,
-        '../../..',
-        'FS',
-        'uploads',
-        fileName,
-      );
-
-      if (!fs.existsSync(filePath)) {
-        fs.writeFileSync(filePath, file.buffer);
+      const uploadsDir = path.join(__dirname, '../../..', 'FS', 'uploads');
+      if (!fs.existsSync(uploadsDir)) {
+        fs.mkdirSync(uploadsDir, { recursive: true });
       }
+
+      const filePath = path.join(uploadsDir, fileName);
+      fs.writeFileSync(filePath, file.buffer);
 
       await this.queueTranscription(filePath);
     }
   }
 
-  async queueTranscription(filename: string) {
-    await this.transcribeQueue.add('transcribe-mp3', { filename });
+  async queueTranscription(filePath: string) {
+    await this.transcribeQueue.add('transcribe-mp3', { filePath });
   }
 }

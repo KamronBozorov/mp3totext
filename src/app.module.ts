@@ -1,10 +1,15 @@
 import { BullModule } from '@nestjs/bull';
 import { Module } from '@nestjs/common';
 import { FilesModule } from './files/files.module';
+import { DeepgramModule } from './deepgram/deepgram.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    FilesModule,
+    ConfigModule.forRoot({
+      envFilePath: '.env',
+      isGlobal: true,
+    }),
     BullModule.forRoot({
       redis: {
         host: 'localhost',
@@ -14,6 +19,8 @@ import { FilesModule } from './files/files.module';
     BullModule.registerQueue({
       name: 'transcribe',
     }),
+    FilesModule,
+    DeepgramModule,
   ],
   controllers: [],
   providers: [],
