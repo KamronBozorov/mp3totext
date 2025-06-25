@@ -6,6 +6,17 @@ export class DocGenerator {
 
   generateDoc() {
     const doc = new Document({
+      styles: {
+        default: {
+          document: {
+            run: {
+              // size 12.5
+              size: 12.5,
+              font: 'Arial',
+            },
+          },
+        },
+      },
       sections: [
         {
           properties: {},

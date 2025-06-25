@@ -22,7 +22,7 @@ export class DeepgramService {
         throw new Error(response.error.message || 'Transkripsiya xatosi');
       }
 
-      //console.log('Natija:', JSON.stringify(response.result, null, 2));
+      console.log('Natija:', JSON.stringify(response.result, null, 2));
       return response.result;
     } catch (err) {
       console.error('Umumiy xato:', err);
