@@ -3,11 +3,15 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 import { Queue } from 'bullmq';
 import * as fs from 'fs';
 import * as path from 'path';
+import { AudioPreprocessorService } from 'src/common/untils/audio-preprocessor.service';
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
 export class FilesService {
-  constructor(@InjectQueue('transcribe') private transcribeQueue: Queue) {}
+  constructor(
+    @InjectQueue('transcribe') private transcribeQueue: Queue,
+    private readonly audioPreProcessor: AudioPreprocessorService,
+  ) {}
 
   async uploadFile(files: Array<Express.Multer.File>) {
     for (const file of files) {
@@ -19,7 +23,7 @@ export class FilesService {
         throw new BadRequestException(`Only .mp3 files allowed`);
       }
 
-      const fileName = uuidv4() + '.mp3';
+      const fileName = uuidv4() + '.wav';
 
       const uploadsDir = path.join(__dirname, '../../..', 'FS', 'uploads');
       if (!fs.existsSync(uploadsDir)) {
@@ -27,13 +31,15 @@ export class FilesService {
       }
 
       const filePath = path.join(uploadsDir, fileName);
-      fs.writeFileSync(filePath, file.buffer);
+      //fs.writeFileSync(filePath, file.buffer);
 
-      await this.queueTranscription(filePath);
+      console.log('Men audio-preprocessordan chiqib keldim');
+      this.queueTranscription(file.buffer);
     }
   }
 
-  async queueTranscription(filePath: string) {
-    await this.transcribeQueue.add('transcribe-mp3', { filePath });
+  async queueTranscription(buffer: Buffer) {
+    console.log('Men uploaddan chiqib keldim');
+    await this.transcribeQueue.add('transcribe-mp3', { buffer });
   }
 }

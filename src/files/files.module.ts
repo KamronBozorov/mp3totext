@@ -3,7 +3,8 @@ import { FilesService } from './files.service';
 import { FilesController } from './files.controller';
 import { BullModule } from '@nestjs/bull';
 import { DeepgramModule } from 'src/deepgram/deepgram.module';
-import { TranscribeProcessor } from 'src/queue/transcribe.process';
+import { TranscribeProcessor } from 'src/common/queue/transcribe.process';
+import { AudioPreprocessorService } from 'src/common/untils/audio-preprocessor.service';
 
 @Module({
   imports: [
@@ -13,6 +14,6 @@ import { TranscribeProcessor } from 'src/queue/transcribe.process';
     DeepgramModule,
   ],
   controllers: [FilesController],
-  providers: [FilesService, TranscribeProcessor],
+  providers: [FilesService, TranscribeProcessor, AudioPreprocessorService],
 })
 export class FilesModule {}
