@@ -23,7 +23,6 @@ export async function generateTranscriptDocx(
   const paragraphs: Paragraph[] = [];
 
   for (const block of transcripts) {
-    // Har bir speaker uchun sarlavha qo‘shamiz
     paragraphs.push(
       new Paragraph({
         spacing: { after: 200 },
@@ -69,7 +68,6 @@ export async function generateTranscriptDocx(
     'results',
     `${filename}`,
   );
-  console.log(filePath);
 
   writeFileSync(filePath, buffer);
   return filePath;

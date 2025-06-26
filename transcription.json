@@ -1,0 +1,277 @@
+[
+  {
+    "sentences": [
+      {
+        "text": "Section four You will hear part of a lecture about conflict at work, given by a business studies lecturer.",
+        "start": 0,
+        "end": 7.92
+      },
+      {
+        "text": "First, you have some time to look at questions 31 to 40.",
+        "start": 8.96,
+        "end": 12.639999
+      }
+    ],
+    "speaker": 0,
+    "num_words": 31,
+    "start": 0,
+    "end": 12.639999
+  },
+  {
+    "sentences": [
+      {
+        "text": "Over the years, attitudes towards workers have changed considerably.",
+        "start": 57.34,
+        "end": 61.42
+      },
+      {
+        "text": "After all, there was a time when workers had no rights at all and laboured in appalling conditions.",
+        "start": 62.145,
+        "end": 68.545
+      },
+      {
+        "text": "Conditions have improved a lot, but conflict in the workplace is still common, and human resources managers nowadays need to be able to deal with it when necessary.",
+        "start": 68.945,
+        "end": 79.734
+      }
+    ],
+    "speaker": 1,
+    "num_words": 55,
+    "start": 57.34,
+    "end": 79.734
+  },
+  {
+    "sentences": [
+      {
+        "text": "What is conflict in the workplace?",
+        "start": 0.24,
+        "end": 2.9599998
+      },
+      {
+        "text": "Definitions vary, but I'm taking it to refer to a whole range of behaviours that the victim finds unacceptable, from minor, harmless arguments to, at the opposite extreme, physical violence.",
+        "start": 3.36,
+        "end": 17.134998
+      },
+      {
+        "text": "Much of this is covered by the term bullying, by which I mean one or more people behaving abusively or aggressively against another who is in a weaker position.",
+        "start": 17.455,
+        "end": 28.654999
+      },
+      {
+        "text": "Although all behaviour like this is a form of conflict, not all conflict can be described in these terms.",
+        "start": 29.57,
+        "end": 36.29
+      },
+      {
+        "text": "As with all human behaviour, there are numerous reasons for it, but often it's caused by someone who feels the need to show their superiority over someone else, in order to feel that they aren't at the lowest level in a hierarchy or a group of people.",
+        "start": 37.09,
+        "end": 52.925
+      }
+    ],
+    "speaker": 0,
+    "num_words": 131,
+    "start": 0.24,
+    "end": 52.925
+  },
+  {
+    "sentences": [
+      {
+        "text": "In some cases, one person simply dislikes the other, on the basis that the personality of one is in some way incompatible with that of the other person.",
+        "start": 54.18,
+        "end": 64.9
+      },
+      {
+        "text": "A general habit of optimism in one person could make them intolerant of a colleague who's constantly pessimistic not that that justifies treating them badly, of course.",
+        "start": 65.54,
+        "end": 76.545
+      },
+      {
+        "text": "Some conflicts arise when people are more",
+        "start": 77.505,
+        "end": 80.945
+      }
+    ],
+    "speaker": 0,
+    "num_words": 62,
+    "start": 54.18,
+    "end": 80.945
+  },
+  {
+    "sentences": [
+      {
+        "text": "Interested in promoting themselves and their team than in the company as a whole.",
+        "start": 0,
+        "end": 5.52
+      },
+      {
+        "text": "These conflicts are called structural and could come about, for example, when a sales team believe they are the only people in the business who do any useful work and look down on behind the scenes administrators.",
+        "start": 5.8399997,
+        "end": 20.064999
+      },
+      {
+        "text": "Conflict obviously affects the individuals concerned.",
+        "start": 20.945,
+        "end": 24.305
+      },
+      {
+        "text": "The situation is likely to be very stressful for victims, resulting in their absence from work, possibly for months.",
+        "start": 24.545,
+        "end": 32.78
+      },
+      {
+        "text": "For the company, if no effort is made to deal with conflict, it can spiral out of control and even lead to the breakdown of the business.",
+        "start": 33.02,
+        "end": 41.82
+      }
+    ],
+    "speaker": 0,
+    "num_words": 103,
+    "start": 0,
+    "end": 41.82
+  },
+  {
+    "sentences": [
+      {
+        "text": "Some interesting work with chief executives has uncovered some of the reasons why they may treat colleagues badly.",
+        "start": 42.875,
+        "end": 53.995
+      },
+      {
+        "text": "Many CEOs combine two opposing characteristics: confidence that is, the belief that they're capable of great achievements with a high level of anxiety a fear of missing targets, whether set by themselves or by the directors of the company.",
+        "start": 54.920002,
+        "end": 73.155
+      },
+      {
+        "text": "This combination can make them respond badly to anyone who questions their decisions.",
+        "start": 73.395004,
+        "end": 78.915
+      },
+      {
+        "text": "In",
+        "start": 79.715,
+        "end": 81.315
+      }
+    ],
+    "speaker": 0,
+    "num_words": 71,
+    "start": 42.875,
+    "end": 81.315
+  },
+  {
+    "sentences": [
+      {
+        "text": "High pressure work environment, such characteristics become problematic, and it's particularly difficult to tackle the situation where colleagues, managers and board members are all trying to achieve their own visions.",
+        "start": 0,
+        "end": 14.4
+      },
+      {
+        "text": "When they can't agree on strategic issues, and on where they see the business going, there are real problems.",
+        "start": 15.435,
+        "end": 21.835
+      },
+      {
+        "text": "For managers at lower levels within the organisation, it might seem that an autocratic form of management, where the chief executive gives orders and everyone else has to obey, would see more conflict than others.",
+        "start": 22.555,
+        "end": 36.29
+      },
+      {
+        "text": "Interestingly, though, a company with a more democratic business model can suffer more when uncertainty about who to report to leads to conflicting demands.",
+        "start": 36.85,
+        "end": 49.015
+      },
+      {
+        "text": "Now I'll say a little about dealing with the type of conflict that has harmful effects.",
+        "start": 50.055,
+        "end": 55.895
+      }
+    ],
+    "speaker": 0,
+    "num_words": 124,
+    "start": 0,
+    "end": 55.895
+  },
+  {
+    "sentences": [
+      {
+        "text": "Of course, the ideal is to prevent it arising in the first place.",
+        "start": 56.135002,
+        "end": 60.055
+      },
+      {
+        "text": "A good manager at any level will make efforts to earn the respect of the people they work with, particularly those who report to them.",
+        "start": 60.52,
+        "end": 69.48
+      },
+      {
+        "text": "That will involve politeness in all communications, and treating them as equals who happen to have a different role within the organisation.",
+        "start": 70.08494,
+        "end": 78.40494
+      },
+      {
+        "text": "Sometimes, of course,",
+        "start": 79.20494,
+        "end": 80.16494
+      }
+    ],
+    "speaker": 0,
+    "num_words": 63,
+    "start": 56.135002,
+    "end": 80.16494
+  },
+  {
+    "sentences": [
+      {
+        "text": "Conflict does occur, and can get out of hand.",
+        "start": 0,
+        "end": 4.08
+      },
+      {
+        "text": "In such cases, the Human Resources Department often gets involved.",
+        "start": 4.4,
+        "end": 8.719999
+      },
+      {
+        "text": "However, if one of the parties in a conflict sees Human Resources as simply a as simply a mouthpiece for the chief executive, then an external mediator might be able to help.",
+        "start": 9.04,
+        "end": 20.404999
+      },
+      {
+        "text": "By talking to both sides and trying to find the truth of what's been happening, they can build a clear picture of the situation and give feedback that both sides will accept precisely because they're independent.",
+        "start": 20.965,
+        "end": 35.66
+      }
+    ],
+    "speaker": 0,
+    "num_words": 87,
+    "start": 0,
+    "end": 35.66
+  },
+  {
+    "sentences": [
+      {
+        "text": "That is the end of Section four.",
+        "start": 38.14,
+        "end": 40.059998
+      },
+      {
+        "text": "You now have half a minute to check your answers.",
+        "start": 41.025,
+        "end": 43.745
+      },
+      {
+        "text": "That is the end of the Listening Test.",
+        "start": 66.975,
+        "end": 69.135
+      },
+      {
+        "text": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+        "start": 70.255,
+        "end": 75.695
+      }
+    ],
+    "speaker": 1,
+    "num_words": 43,
+    "start": 38.14,
+    "end": 75.695
+  }
+]

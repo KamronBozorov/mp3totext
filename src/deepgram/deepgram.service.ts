@@ -16,13 +16,11 @@ export class DeepgramService {
     try {
       return await retry(
         async () => {
-          console.log('Men deepgramdan chiqib keldim');
-          console.log(filePath);
           const audioStream = fs.createReadStream(filePath);
           const result = await this.deepgram.listen.prerecorded.transcribeFile(
             audioStream,
             {
-              model: 'nova-3',
+              model: 'nova-3-medical',
               language: 'en-US',
               punctuate: true,
               diarize: true,
@@ -52,8 +50,6 @@ export class DeepgramService {
 
   async transcribe(buffer: Buffer) {
     try {
-      console.log('Men trans danman');
-
       const tempDir = join(__dirname, '../../..', 'FS', 'temp_segments');
 
       if (!fs.existsSync(tempDir)) {
@@ -66,14 +62,12 @@ export class DeepgramService {
       );
 
       const transcriptions: any = [];
-      console.log(segmentFiles);
       for (const filePath of segmentFiles) {
-        console.info(`Transcribing segment: ${filePath}`);
+        console.log('Transcribing segment:', filePath);
         const transcript = await this.transcribeSegment(filePath);
         transcriptions.push(...transcript);
       }
 
-      console.log(transcriptions);
       fs.writeFileSync(
         'transcription.json',
         JSON.stringify(transcriptions, null, 2),

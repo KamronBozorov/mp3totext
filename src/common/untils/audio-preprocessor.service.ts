@@ -2,7 +2,6 @@ import { Injectable } from '@nestjs/common';
 import { spawn } from 'child_process';
 import * as fs from 'fs';
 import * as path from 'path';
-import * as stream from 'stream';
 
 @Injectable()
 export class AudioPreprocessorService {
@@ -11,7 +10,6 @@ export class AudioPreprocessorService {
     tempDir: string = 'temp_segments',
   ): Promise<string[]> {
     return new Promise((resolve, reject) => {
-      // Vaqtinchalik papka yaratish
       if (!fs.existsSync(tempDir)) {
         fs.mkdirSync(tempDir, { recursive: true });
       }
@@ -38,13 +36,13 @@ export class AudioPreprocessorService {
           '-ar',
           '16000',
           `-af`,
-          `arnndn=m='${rnnoiseModelPath}',loudnorm,volume=1.5,silenceremove=stop_periods=-1:stop_duration=0.3:stop_threshold=-60dB`,
+          `arnndn=m='${rnnoiseModelPath}',loudnorm=I=-16:TP=-1.5:LRA=11,`,
           '-c:a',
           'pcm_s16le',
           '-f',
           'segment',
           '-segment_time',
-          '30',
+          '80',
           outputPattern,
         ],
         { stdio: ['pipe', 'pipe', 'pipe'] },
